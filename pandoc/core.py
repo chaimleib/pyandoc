@@ -1,13 +1,19 @@
+#!/usr/bin/python
+# -*- encoding: utf-8 -*-
+"""
+
+"""
 import subprocess
 from os.path import exists
 from tempfile import NamedTemporaryFile
 import os
+import warnings
 
 PANDOC_PATH = 'pandoc'
 
 def set_path(path):
     global PANDOC_PATH
-	PANDOC_PATH = path
+    PANDOC_PATH = path
 
 class Document(object):
     """A formatted document."""
@@ -79,7 +85,8 @@ class Document(object):
         p = subprocess.Popen(
                 subprocess_arguments,
                 stdin=subprocess.PIPE, 
-                stdout=subprocess.PIPE
+                stdout=subprocess.PIPE,
+                universal_newlines=True
         )
         return p.communicate(self._content)[0]
 
@@ -100,7 +107,7 @@ class Document(object):
         msg = fin.read()
         fin.close()
         if msg:
-            print "Pandoc message:", msg
+            warnings.warn(msg)
         
         os.remove(temp_file.name)
         
