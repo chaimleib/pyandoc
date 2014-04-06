@@ -20,12 +20,12 @@ required = []
 
 setup(
     name='pyandoc',
-    version='0.0.2',
+    version='0.0.3',
     description='Python wrapper for Pandoc - the universal document converter',
     long_description=open('README.rst').read() + '\n\n' +
                      open('HISTORY.rst').read(),
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
+    author='Kenneth Reitz, Martin Martimeo',
+    author_email='me@kennethreitz.com, martin@martimeo.de',
     url='http://github.com/kennethreitz/pyandoc',
     packages=[
         'pandoc',

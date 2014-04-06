@@ -47,15 +47,20 @@ Formats available:
 	- epub
 	- html
 	- html_lhs
+	- html5
+	- html5_lhs
+	- json
 	- latex
 	- latex_lhs
 	- man
 	- markdow
-	- nmarkdown_lhs
+	- markdown_lhs
+	- markdown_github
 	- mediawiki
 	- native
 	- odt
 	- opendocument
+	- pdf
 	- plain
 	- rst
 	- rst_lhs
@@ -71,8 +76,6 @@ Roadmap
 +++++++
 
 * Cleanup
-* Figure out epub, odt support
-* Figure out better path management
 * Proper Exceptions
 * Unit testing
 * CI
