@@ -51,7 +51,7 @@ class Document(object):
         self._register_formats()
         self.arguments = []
 
-        if not exists(PANDOC_PATH):
+        if not PANDOC_PATH or not exists(PANDOC_PATH):
             raise OSError("Path to pandoc executable does not exists")
 
     def bib(self, bibfile):
