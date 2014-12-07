@@ -25,25 +25,25 @@ class Document(object):
         A formatted document.
     """
 
-    INPUT_FORMATS = {
+    INPUT_FORMATS = set([
         'native', 'markdown', 'markdown+lhs', 'rst',
         'rst+lhs', 'html', 'latex', 'latex+lhs',
         'json', 'markdown_github', 'markdown_mmd', 'markdown_phpextra',
         'mediawiki', 'textile'
-    }
+    ])
 
-    OUTPUT_FORMATS = {
+    OUTPUT_FORMATS = set([
         'native', 'html', 'html+lhs', 's5', 'html5', 'html5+lhs', 'slidy',
         'docbook', 'opendocument', 'asciidoc',
         'latex', 'latex+lhs', 'context', 'texinfo', 'json',
         'man', 'markdown', 'markdown+lhs', 'markdown_github',
         'plain', 'rst', 'rst+lhs', 'mediawiki', 'rtf', 'texinfo',
         'textile', 'docx'
-    }
+    ])
 
-    OUTPUT_WRITER = {
+    OUTPUT_WRITER = set([
         'odt', 'epub', 'epub3', 'pdf'
-    }
+    ])
 
     def __init__(self):
         self._content = None
