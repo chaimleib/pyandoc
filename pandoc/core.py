@@ -25,20 +25,49 @@ class Document(object):
         A formatted document.
     """
 
-    INPUT_FORMATS = set([
-        'native', 'markdown', 'markdown+lhs', 'rst',
-        'rst+lhs', 'html', 'latex', 'latex+lhs',
-        'json', 'markdown_github', 'markdown_mmd', 'markdown_phpextra',
-        'mediawiki', 'textile'
+    INPUT_FORMATS = set(['html',
+        'json',
+        'latex',
+        'latex+lhs',
+        'markdown',
+        'markdown+lhs',
+        'markdown_github',
+        'markdown_mmd',
+        'markdown_phpextra',
+        'mediawiki',
+        'native',
+        'rst',
+        'rst+lhs',
+        'textile',
     ])
 
-    OUTPUT_FORMATS = set([
-        'native', 'html', 'html+lhs', 's5', 'html5', 'html5+lhs', 'slidy',
-        'docbook', 'opendocument', 'asciidoc',
-        'latex', 'latex+lhs', 'context', 'texinfo', 'json',
-        'man', 'markdown', 'markdown+lhs', 'markdown_github',
-        'plain', 'rst', 'rst+lhs', 'mediawiki', 'rtf', 'texinfo',
-        'textile', 'docx'
+    OUTPUT_FORMATS = set(['asciidoc',
+        'context',
+        'docbook',
+        'docx',
+        'html',
+        'html+lhs',
+        'html5',
+        'html5+lhs',
+        'json',
+        'latex',
+        'latex+lhs',
+        'man',
+        'markdown',
+        'markdown+lhs',
+        'markdown_github',
+        'mediawiki',
+        'native',
+        'opendocument',
+        'plain',
+        'rst',
+        'rst+lhs',
+        'rtf',
+        's5',
+        'slidy',
+        'texinfo',
+        'texinfo',
+        'textile',
     ])
 
     OUTPUT_WRITER = set([
