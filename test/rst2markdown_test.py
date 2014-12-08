@@ -9,4 +9,4 @@ def test_conversion():
     markdown = doc.markdown
     assert isinstance(markdown, str)
     assert len(markdown)
-
+    assert rst != markdown
