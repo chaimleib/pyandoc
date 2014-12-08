@@ -6,9 +6,6 @@ python:
     - "3.3"
     - "3.4"
 before_script:
-    - sudo apt-get install cabal-install
-    - cabal update
-    - cabal install pandoc
-    - export PATH=~/.cabal/bin:$PATH
+    - sudo apt-get install pandoc
 script:
     - python setup.py develop test
