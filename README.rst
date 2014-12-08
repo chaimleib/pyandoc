@@ -1,5 +1,7 @@
 Pyandoc: a simple Pandoc wrapper for Python
 
+.. image:: https://travis-ci.org/chaimleib/pyandoc.svg
+    :target: https://travis-ci.org/chaimleib/pyandoc
 
 Requirements
 ++++++++++++
