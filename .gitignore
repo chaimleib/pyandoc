@@ -8,6 +8,7 @@ MANIFEST
 *.pyo
 *.egg-info
 .eggs/
+*.egg
 
 # osx noise
 .DS_Store
