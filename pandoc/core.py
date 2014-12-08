@@ -25,6 +25,7 @@ class Document(object):
         A formatted document.
     """
 
+    # No set literals in Python 2.6, using set()
     INPUT_FORMATS = set(['html',
         'json',
         'latex',
